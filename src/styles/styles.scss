@@ -1,0 +1,25 @@
+@import '@/styles/font.scss';
+@import '@/styles/colors.scss';
+
+$menu-height: 100px;
+$logo-width: 182px;
+$container-width: 1080px;
+
+@mixin font($fontSize, $text-light: true){
+    font-family: 'Neucha';
+    font-weight: 400;
+    font-size: $fontSize;
+
+    @if $text-light{
+        color: $text-color-light;
+    }
+    @else{
+        color: $text-color-dark;
+    }
+}
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
